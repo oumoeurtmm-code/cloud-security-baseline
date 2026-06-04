@@ -100,6 +100,31 @@ aws ec2 describe-flow-logs --query 'FlowLogs[].{VPC:ResourceId,Status:FlowLogSta
 aws configservice describe-configuration-recorder-status \
   --query 'ConfigurationRecordersStatus[].{Name:name,Recording:recording,LastStatus:lastStatus}'
 ```
+## Governance & Compliance Support
+
+This repository supports governance-focused cloud security work aligned to enterprise and GovCon environments.
+
+### Focus Areas
+
+- NIST 800-53 control mapping
+- POA&M management workflows
+- SSP maintenance support
+- Continuous monitoring reporting
+- Quarterly access reviews and privileged account audits
+- Cloud tagging compliance assessments
+- Resource inventory reconciliation
+- Technical documentation for cloud architecture and system inventories
+
+### Governance Documentation
+
+| Document | Description |
+|---|---|
+| [NIST 800-53 Control Mapping](./governance/nist-800-53-control-mapping.md) | Practical mapping of cloud controls and evidence to NIST control families |
+| [POA&M Workflow](./governance/poam-workflow.md) | Tracking findings, remediation actions, owners, and closure evidence |
+| [SSP Maintenance Checklist](./governance/ssp-maintenance-checklist.md) | Triggers and checklist for keeping a System Security Plan current |
+| [Continuous Monitoring Reporting](./governance/continuous-monitoring-reporting.md) | Monthly ConMon report structure and inputs |
+| [Quarterly Access Review Process](./governance/quarterly-access-review-process.md) | Reviewing and validating privileged and general access each quarter |
+| [System Inventory Management](./governance/system-inventory-management.md) | Maintaining accurate records of in-scope assets and cloud services |
 
 ---
 
