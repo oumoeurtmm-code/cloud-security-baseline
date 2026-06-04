@@ -1,0 +1,43 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowCostExplorerReadOnly",
+      "Effect": "Allow",
+      "Action": [
+        "ce:GetCostAndUsage",
+        "ce:GetCostForecast",
+        "ce:GetReservationCoverage",
+        "ce:GetReservationUtilization",
+        "ce:GetSavingsPlansCoverage",
+        "ce:GetSavingsPlansUtilization",
+        "ce:GetAnomalies",
+        "ce:GetAnomalyMonitors",
+        "ce:GetAnomalySubscriptions",
+        "ce:ListCostAllocationTags",
+        "ce:DescribeCostCategoryDefinition"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowBudgetsReadOnly",
+      "Effect": "Allow",
+      "Action": [
+        "budgets:ViewBudget",
+        "budgets:DescribeBudgets",
+        "budgets:DescribeBudgetActionsForBudget"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowTagReadOnly",
+      "Effect": "Allow",
+      "Action": [
+        "tag:GetResources",
+        "tag:GetTagKeys",
+        "tag:GetTagValues"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
