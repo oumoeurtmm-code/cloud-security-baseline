@@ -37,29 +37,28 @@ Enterprise AWS cloud security baseline covering IAM least-privilege design, CIS 
 
 ```
 cloud-security-baseline/
+├── governance/
+│   ├── nist-800-53-control-mapping.md
+│   ├── poam-workflow.md
+│   ├── ssp-maintenance-checklist.md
+│   ├── continuous-monitoring-reporting.md
+│   ├── quarterly-access-review-process.md
+│   └── system-inventory-management.md
 ├── iam/
-│   ├── iam-design-principles.md      # Least-privilege design guide
-│   ├── role-structure.md             # Account role hierarchy
+│   ├── iam-design-principles.md
+│   ├── role-structure.md
 │   ├── policies/
-│   │   ├── finops-readonly.json       # Read-only Cost Explorer access
-│   │   ├── ec2-operator.json          # EC2 operator (no IAM changes)
-│   │   └── security-auditor.json      # Security audit read-only
 │   └── scripts/
-│       ├── audit-iam.sh               # List overprivileged roles
-│       └── enforce-mfa.sh             # Enforce MFA for console users
 ├── logging/
-│   ├── logging-standards.md          # Required logs and retention policy
+│   ├── logging-standards.md
 │   └── scripts/
-│       ├── enable-cloudtrail.sh       # Multi-region CloudTrail setup
-│       ├── enable-vpc-flow-logs.sh    # VPC Flow Logs to CloudWatch
-│       └── enable-config.sh           # AWS Config recorder setup
 ├── incident-response/
-│   ├── IR-unauthorized-access.md     # Unauthorized access playbook
-│   ├── IR-network-outage.md          # Network outage runbook
-│   ├── IR-cost-anomaly.md            # Unexpected cost spike runbook
-│   └── IR-data-exposure.md           # Accidental public S3 / data exposure
-└── cis-controls/
-    └── cis-aws-level1-checklist.md   # CIS AWS Level 1 control checklist
+│   ├── IR-unauthorized-access.md
+│   ├── IR-network-outage.md
+│   ├── IR-cost-anomaly.md
+│   └── IR-data-exposure.md
+├── .gitignore
+└── README.md
 ```
 
 ---
